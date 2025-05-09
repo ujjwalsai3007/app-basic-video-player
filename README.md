@@ -41,9 +41,36 @@ A simple video player Android application that demonstrates proper MVVM architec
 
 ## How It Works
 
+## How It Works
+
 The app reads a video URL from a JSON file in the assets folder and plays it using ExoPlayer. When you press back or navigate away from the app, it automatically enters Picture-in-Picture mode, allowing you to continue watching the video while using other apps.
 
 If there's any issue loading the video from the remote URL, the app will automatically fall back to a local video resource.
+
+### Architecture Flow
+
+1. **Data Loading**: When the app starts, the `JsonDataSource` reads the video URL from the assets folder and passes it to the `VideoRepository`.
+
+2. **Repository Layer**: The `VideoRepository` processes the data and handles any potential errors, ensuring a valid URL is always provided.
+
+3. **ViewModel Processing**: The `VideoPlayerViewModel` requests the URL from the repository and exposes it to the UI through LiveData, along with loading states.
+
+4. **UI Rendering**: The `VideoPlayerActivity` observes the ViewModel's LiveData and updates the UI accordingly, loading the video when the URL is available.
+
+5. **Video Playback**: ExoPlayer handles the actual video playback, with proper lifecycle management to prevent memory leaks.
+
+6. **PiP Functionality**: The `PipHelper` class manages transitions to and from Picture-in-Picture mode, maintaining the playback state during transitions.
+
+### Error Handling
+
+The app implements multiple layers of error handling to ensure a smooth user experience:
+
+- JSON parsing errors are caught in the data source
+- Network errors are handled when loading the video
+- Playback errors trigger fallback to local video
+- UI states reflect loading progress and success states
+
+This multi-layered approach ensures that users always have a working video player experience, even when offline or when the remote video source is unavailable.
 
 ## Requirements
 
