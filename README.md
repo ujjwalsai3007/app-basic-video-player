@@ -14,7 +14,7 @@ A simple video player Android application that demonstrates proper MVVM architec
 
 | Full Screen Playback | Picture-in-Picture Mode |
 |:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/5dffb438-651b-4462-93a7-4fc94e81ab86" width="300"> | <img src="https://github.com/user-attachments/assets/3449e856-b31c-4ab1-a8f1-890a33e78fd2" width="300"> |
+| ![Full Screen](https://i.imgur.com/z71HVMZ.jpg) | ![PiP Mode](https://i.imgur.com/Xzue8Fq.jpg) |
 
 ## Implementation Details
 
