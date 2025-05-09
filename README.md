@@ -41,8 +41,6 @@ A simple video player Android application that demonstrates proper MVVM architec
 
 ## How It Works
 
-## How It Works
-
 The app reads a video URL from a JSON file in the assets folder and plays it using ExoPlayer. When you press back or navigate away from the app, it automatically enters Picture-in-Picture mode, allowing you to continue watching the video while using other apps.
 
 If there's any issue loading the video from the remote URL, the app will automatically fall back to a local video resource.
