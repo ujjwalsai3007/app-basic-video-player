@@ -9,14 +9,12 @@ A simple video player Android application that demonstrates proper MVVM architec
 - **MVVM Architecture**: Clean separation of concerns with Model-View-ViewModel pattern
 - **Error Handling**: Graceful fallback to local video when remote loading fails
 - **Dependency Injection**: Uses Hilt for clean dependency management
-
 ## Screenshots
 
 | Full Screen Playback | Picture-in-Picture Mode |
 |:---:|:---:|
-full screen- ![Screenshot_20250509_111342](https://github.com/user-attachments/assets/7dc2418d-8553-48ae-a404-f95c4aadf805)
-pip- 
-![Screenshot_20250509_111413](https://github.com/user-attachments/assets/06dd6619-01e4-4b90-b65b-d796e4288241)
+| <img src="https://github.com/user-attachments/assets/7dc2418d-8553-48ae-a404-f95c4aadf805" width="300"/> | <img src="https://github.com/user-attachments/assets/06dd6619-01e4-4b90-b65b-d796e4288241" width="300"/> |
+
 
 
 ## Implementation Details
